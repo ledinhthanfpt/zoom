@@ -133,30 +133,5 @@ const vm = new Vue({
       video.setAttribute("playsinline", "true");
       videoContainer.appendChild(video);
     }
-    
   }
 });
-
-
-function copyCode() {
-    // Lấy đối tượng code
-    var code = document.getElementById("roomCode");
-  
-    // Tạo một phần tử input để copy
-    var input = document.createElement("input");
-    input.setAttribute("value", code.textContent);
-    document.body.appendChild(input);
-  
-    // Chọn nội dung trong phần tử input
-    input.select();
-  
-    // Sao chép nội dung được chọn vào clipboard
-    document.execCommand("copy");
-  
-    // Xóa phần tử input
-    document.body.removeChild(input);
-  
-    // Hiển thị thông báo copy thành công
-    alert("Đã sao chép mã phòng thành công!");
-  }
-  
